@@ -62,7 +62,7 @@ class Navbar extends Component {
           open={open}
           message={
             <span id="message-id">
-              Format Changed to {format.toUpperCase()}
+              Format changed to {format.toUpperCase()}
             </span>
           }
           ContentProps={{
