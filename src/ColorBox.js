@@ -165,7 +165,7 @@ class ColorBox extends Component {
             <h1>copied!</h1>
             <p className={classes.copyText}>{background}</p>
           </div>
-          <div className="copy-container">
+          <div>
             <div className={classes.boxContent}>
               <span className={classes.colorName}>{name}</span>
             </div>
