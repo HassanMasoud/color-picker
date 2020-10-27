@@ -64,19 +64,6 @@
   color: black;
 }
 
-.see-more {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.3);
-  width: 60px;
-  height: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-  text-align: center;
-  color: white;
-}
-
 .copy-overlay {
   opacity: 0;
   z-index: 0;
@@ -129,7 +116,6 @@
 }
 
 .copy-msg p {
-  color: white;
   font-weight: 100;
   font-size: 2rem;
 }
