@@ -18,10 +18,14 @@ export default {
     display: "flex",
     width: "100%",
     justifyContent: "space-between",
+    alignItems: "center",
     color: "white",
     "& h1": {
       margin: "0",
       padding: "1rem 0",
+    },
+    "& a": {
+      color: "white",
     },
   },
 
