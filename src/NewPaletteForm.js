@@ -18,26 +18,6 @@ const styles = (theme) => ({
   root: {
     display: "flex",
   },
-  appBar: {
-    transition: theme.transitions.create(["margin", "width"], {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-  },
-  appBarShift: {
-    width: `calc(100% - ${drawerWidth}px)`,
-    marginLeft: drawerWidth,
-    transition: theme.transitions.create(["margin", "width"], {
-      easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  hide: {
-    display: "none",
-  },
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
@@ -153,7 +133,6 @@ class NewPaletteForm extends Component {
     return (
       <div className={classes.root}>
         <PaletteFormNav
-          classes={classes}
           open={open}
           palettes={palettes}
           handleSubmit={this.handleSubmit}
