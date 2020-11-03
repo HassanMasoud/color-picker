@@ -31,21 +31,13 @@ class PaletteMetaForm extends Component {
     });
   }
 
-  handleClickOpen = () => {
-    this.setState({ open: true });
-  };
-
-  handleClose = () => {
-    this.setState({ open: false });
-  };
-
   render() {
-    const { handleSubmit } = this.props;
+    const { hideForm, handleSubmit } = this.props;
     const { open, newPaletteName } = this.state;
     return (
       <Dialog
         open={open}
-        onClose={this.handleClose}
+        onClose={hideForm}
         aria-labelledby="form-dialog-title"
       >
         <DialogTitle id="form-dialog-title">Choose a Palette Name</DialogTitle>
@@ -67,7 +59,7 @@ class PaletteMetaForm extends Component {
             />
           </DialogContent>
           <DialogActions>
-            <Button onClick={this.handleClose} color="primary">
+            <Button onClick={hideForm} color="primary">
               Cancel
             </Button>
             <Button variant="contained" color="primary" type="submit">
