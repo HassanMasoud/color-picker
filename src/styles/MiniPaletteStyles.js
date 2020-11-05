@@ -43,8 +43,6 @@ export default {
     marginLeft: "0.5rem",
   },
 
-  delete: {},
-
   deleteIcon: {
     position: "absolute",
     top: "0px",
