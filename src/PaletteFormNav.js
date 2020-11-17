@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import PaletteMetaForm from "./PaletteMetaForm";
 import { Link } from "react-router-dom";
-import clsx from "clsx";
 import { withStyles } from "@material-ui/core/styles";
+import clsx from "clsx";
+import PaletteMetaForm from "./PaletteMetaForm";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -47,6 +47,7 @@ class PaletteFormNav extends Component {
       handleDrawerOpen,
       palettes,
     } = this.props;
+    const { formShowing } = this.state;
     return (
       <div className={classes.root}>
         <CssBaseline />
@@ -91,7 +92,7 @@ class PaletteFormNav extends Component {
             </Button>
           </div>
         </AppBar>
-        {this.state.formShowing && (
+        {formShowing && (
           <PaletteMetaForm
             handleSubmit={handleSubmit}
             palettes={palettes}
