@@ -5,6 +5,7 @@ import clsx from "clsx";
 import PaletteFormNav from "./PaletteFormNav";
 import ColorPickerForm from "./ColorPickerForm";
 import DraggableColorList from "./DraggableColorList";
+import seedColors from "./seedColors";
 import Drawer from "@material-ui/core/Drawer";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
@@ -22,7 +23,7 @@ class NewPaletteForm extends Component {
 
     this.state = {
       open: true,
-      colors: this.props.palettes[0].colors,
+      colors: seedColors[0].colors,
     };
 
     this.addNewColor = this.addNewColor.bind(this);
